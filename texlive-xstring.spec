@@ -1,15 +1,15 @@
-# revision 17614
+# revision 31305
 # category Package
-# catalog-ctan /macros/latex/contrib/xstring
-# catalog-date 2010-03-29 17:35:44 +0200
+# catalog-ctan /macros/generic/xstring
+# catalog-date 2013-07-29 13:50:09 +0200
 # catalog-license lppl
-# catalog-version 1.5d
+# catalog-version 1.7b
 Name:		texlive-xstring
-Version:	1.5d
-Release:	2
+Version:	1.7b
+Release:	1
 Summary:	String manipulation for (La)TeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/xstring
+URL:		http://www.ctan.org/tex-archive/macros/generic/xstring
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xstring.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xstring.doc.tar.xz
