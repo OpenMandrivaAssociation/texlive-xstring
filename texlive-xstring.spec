@@ -1,11 +1,11 @@
-# revision 31305
+# revision 31900
 # category Package
 # catalog-ctan /macros/generic/xstring
-# catalog-date 2013-07-29 13:50:09 +0200
+# catalog-date 2013-10-14 17:06:24 +0200
 # catalog-license lppl
-# catalog-version 1.7b
+# catalog-version 1.7c
 Name:		texlive-xstring
-Version:	1.7b
+Version:	1.7c
 Release:	1
 Summary:	String manipulation for (La)TeX
 Group:		Publishing
