@@ -6,7 +6,7 @@
 # catalog-version 1.5d
 Name:		texlive-xstring
 Version:	1.5d
-Release:	2
+Release:	3
 Summary:	String manipulation for (La)TeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/xstring
