@@ -6,7 +6,7 @@
 # catalog-version 1.7c
 Name:		texlive-xstring
 Version:	1.7c
-Release:	6
+Release:	7
 Summary:	String manipulation for (La)TeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/xstring
