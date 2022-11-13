@@ -1,18 +1,12 @@
-# revision 31900
-# category Package
-# catalog-ctan /macros/generic/xstring
-# catalog-date 2013-10-14 17:06:24 +0200
-# catalog-license lppl
-# catalog-version 1.7c
 Name:		texlive-xstring
-Version:	1.7c
-Release:	10
+Version:	60007
+Release:	1
 Summary:	String manipulation for (La)TeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/xstring
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xstring.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xstring.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xstring.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xstring.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -28,26 +22,21 @@ always required). The strings to be processed may contain
 (expandable) macros.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/generic/xstring/xstring.sty
-%{_texmfdistdir}/tex/generic/xstring/xstring.tex
-%doc %{_texmfdistdir}/doc/generic/xstring/README
-%doc %{_texmfdistdir}/doc/generic/xstring/xstring_doc_en.pdf
-%doc %{_texmfdistdir}/doc/generic/xstring/xstring_doc_en.tex
-%doc %{_texmfdistdir}/doc/generic/xstring/xstring_doc_fr.pdf
-%doc %{_texmfdistdir}/doc/generic/xstring/xstring_doc_fr.tex
+%{_texmfdistdir}/tex/generic/xstring
+%doc %{_texmfdistdir}/doc/generic/xstring
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
