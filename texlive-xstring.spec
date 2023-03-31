@@ -1,6 +1,6 @@
 Name:		texlive-xstring
 Version:	60007
-Release:	1
+Release:	2
 Summary:	String manipulation for (La)TeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/xstring
