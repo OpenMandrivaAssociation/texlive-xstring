@@ -1,5 +1,5 @@
 Name:		texlive-xstring
-Version:	65551
+Version:	68015
 Release:	1
 Summary:	String manipulation for (La)TeX
 Group:		Publishing
