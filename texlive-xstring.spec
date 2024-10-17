@@ -3,7 +3,7 @@ Version:	68015
 Release:	1
 Summary:	String manipulation for (La)TeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/generic/xstring
+URL:		https://www.ctan.org/tex-archive/macros/generic/xstring
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xstring.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xstring.doc.r%{version}.tar.xz
