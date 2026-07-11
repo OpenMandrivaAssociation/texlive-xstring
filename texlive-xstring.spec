@@ -1,45 +1,25 @@
-Name:		texlive-xstring
-Version:	68015
-Release:	1
+%global tl_name xstring
+%global tl_revision 77682
+
+Name:		texlive-%{tl_name}
+Epoch:		1
+Version:	1.86
+Release:	%{tl_revision}.1
 Summary:	String manipulation for (La)TeX
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/macros/generic/xstring
-License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xstring.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xstring.doc.r%{version}.tar.xz
+License:	lppl1.3c
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/xstring.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/xstring.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
-BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
-Requires(post):	texlive-kpathsea
+BuildSystem:	texlive
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-The package provides macros for manipulating strings -- testing
-a string's contents, extracting substrings, substitution of
-substrings and providing numbers such as string length,
-position of, or number of recurrences of, a substring. The
-package works equally in Plain TeX and LaTeX (though e-TeX is
-always required). The strings to be processed may contain
-(expandable) macros.
+The package provides macros for manipulating strings -- testing a
+string's contents, extracting substrings, substitution of substrings and
+providing numbers such as string length, position of, or number of
+recurrences of, a substring. The package works equally in Plain TeX and
+LaTeX (though e-TeX is always required). The strings to be processed may
+contain (expandable) macros.
 
-%post
-%{_sbindir}/texlive.post
-
-%postun
-if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-fi
-
-#-----------------------------------------------------------------------
-%files
-%{_texmfdistdir}/tex/generic/xstring
-%doc %{_texmfdistdir}/doc/generic/xstring
-
-#-----------------------------------------------------------------------
-%prep
-%autosetup -p1 -c -a1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex doc %{buildroot}%{_texmfdistdir}
